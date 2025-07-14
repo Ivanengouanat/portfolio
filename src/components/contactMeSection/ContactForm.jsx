@@ -1,21 +1,21 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState("");
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-  };
+
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handleMessage = (e) => setMessage(e.target.value);
+
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -27,7 +27,7 @@ const ContactForm = () => {
           setEmail("");
           setName("");
           setMessage("");
-          setSuccess("Message Sent Succesfully");
+          setSuccess(t("contactForm.success"));
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -42,7 +42,7 @@ const ContactForm = () => {
         <input
           type="text"
           name="from_name"
-          placeholder="Your Name"
+          placeholder={t("contactForm.namePlaceholder")}
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
           value={name}
@@ -51,20 +51,19 @@ const ContactForm = () => {
         <input
           type="email"
           name="from_email"
-          placeholder="Your Email"
+          placeholder={t("contactForm.emailPlaceholder")}
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
           value={email}
           onChange={handleEmail}
         />
         <textarea
-          type="text"
           name="message"
           rows="9"
           cols="50"
-          placeholder="Message"
+          placeholder={t("contactForm.messagePlaceholder")}
           required
-          className=" rounded-lg bg-lightBrown p-2"
+          className="rounded-lg bg-lightBrown p-2"
           value={message}
           onChange={handleMessage}
         />
@@ -72,7 +71,7 @@ const ContactForm = () => {
           type="submit"
           className="w-full rounded-lg border border-cyan text-white h-12 font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500"
         >
-          Send
+          {t("contactForm.sendButton")}
         </button>
       </form>
     </div>

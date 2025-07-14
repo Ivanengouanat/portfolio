@@ -1,18 +1,12 @@
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const AboutMeText = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
-      <h2 className="text-6xl text-cyan mb-10">About Me</h2>
-      <p>
-        I'm a full-stack developer and network administrator, building dynamic
-        applications with Laravel, React.js, and MySQL while managing reliable
-        system and network infrastructures. Versatile and detail-oriented, I
-        combine web development, hardware diagnostics, and cybersecurity
-        practices to deliver scalable and secure solutions. Open to
-        international collaboration, I'm currently pursuing SQL and
-        cybersecurity certifications to elevate my technical profile.
-      </p>
+      <h2 className="text-6xl text-cyan mb-10">{t("about_me.title")}</h2>
+      <p> {t("about_me.description")}</p>
       <button className="border border-orange rounded-full py-2 px-4 text-lg flex gap-2 items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center">
         <Link
           spy={true}
@@ -22,7 +16,7 @@ const AboutMeText = () => {
           to="projects"
           className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
         >
-          My Projects
+          {t("about_me.footer")}
         </Link>
       </button>
     </div>

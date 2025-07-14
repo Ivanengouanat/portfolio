@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { useTranslation } from "react-i18next";
 
 const HeroText = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center">
       <motion.h2
@@ -11,9 +13,9 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
       >
-        Developpeur Full Stack &
+        {t("hero.subtitle_1")}
         <br />
-        Administrateur Reseaux
+        {t("hero.subtitle_2")}
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -32,7 +34,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4"
       >
-        A Passionate Web Developer <br /> with 2 years of experience.
+        {t("hero.description_1")} <br /> {t("hero.description_2")}
       </motion.p>
     </div>
   );

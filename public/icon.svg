@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="1500px" height="1500px" viewBox="0 0 180 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lettre N -->
+  <path
+    d="M22 110 V20 L90 108 V20"
+    fill="none"
+    stroke="#40C0E7"
+    stroke-width="14"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Lettre I (décalée à droite) -->
+  <path
+    d="M128 20 V108"
+    fill="none"
+    stroke="#40C0E7"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+</svg>
+
+
+
+
+

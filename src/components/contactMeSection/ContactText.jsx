@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next";
+
 const ContactText = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h2 className="text-orange text-3xl mb-4">Get In Touch</h2>
+      <h2 className="text-orange text-3xl mb-4">{t("contact.title")}</h2>
       <p>
-        Let’s collaborate to bring your ideas to life.
+        {t("contact.message1")}
         <br />
-        Just a few clicks can turn inspiration into action.
+        {t("contact.message2")}
       </p>
     </div>
   );

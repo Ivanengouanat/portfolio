@@ -1,0 +1,118 @@
+{
+  "navbar": {
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "Hire Me": " Hire Me"
+  },
+  "hero": {
+    "subtitle_1": "Full Stack Developer &",
+    "subtitle_2": "Network Administrator",
+    "description_1": "A Passionate Web Developer",
+    "description_2": "with 2 years of experience."
+  },
+  "subhero": {
+    "title1": "Fast Learner",
+    "title2": "Team Work",
+    "title3": "Details Master"
+  },
+  "about_me": {
+    "title": "About Me",
+    "description": "I'm a full-stack developer and network administrator, building dynamic applications with Laravel, React.js, and MySQL while managing reliable system and network infrastructures. Versatile and detail-oriented, I combine web development, hardware diagnostics, and cybersecurity practices to deliver scalable and secure solutions. Open to international collaboration, I'm currently pursuing SQL and cybersecurity certifications to elevate my technical profile.",
+    "footer": "My Projects"
+  },
+  "skill": {
+    "title": "My Skills",
+    "description": " Every skill I've developed goes beyond theory, it's tested and proven in real-world situations. I work with these tools and languages daily, applying professional standards to deliver solid and optimized results. My portfolio projects are a direct reflection of this expertise, built with passion, precision, and attention to detail."
+  },
+  "experience": {
+    "intro": "With a strong background in web development, I specialize in using",
+    "stack": "Laravel and React to build elegant, high-performance interfaces.",
+    "practice": " I follow best practices to create",
+    "stable": "scalable and maintainable solutions.",
+    "scope": "My experience spans a variety of projects, from showcase websites to",
+    "focus": "complex front-end systems, with a constant focus on clean code and exceptional user experience."
+  },
+  "experienceTopLeft": {
+    "since": "Since 2024",
+    "years": "Years",
+    "websites": "Websites",
+    "budget": "Max Budget",
+    "description": "Web developer with 2 years of experience, I use Laravel and React to build reliable and high-performance interfaces."
+  },
+  "experiences": {
+    "frontend": {
+      "job": "Front-End Developer",
+      "company": "Dental Practice Website",
+      "date": "January 2025",
+      "resp1": "Designed and developed dynamic user interfaces using React.js.",
+      "resp2": "Built reusable and modular components to streamline development.",
+      "resp3": "Developed a custom management system for dental practice operations using Laravel, MySQL, and React.",
+      "resp4": "Tested, debugged and maintained code stability in production."
+    },
+    "backend": {
+      "job": "Backend Developer",
+      "company": "Dental Practice Website",
+      "date": "January 2025",
+      "resp1": "Developed secure RESTful APIs with Laravel to support core dental operations.",
+      "resp2": "Designed and optimized MySQL databases for patient records, appointments, and billing.",
+      "resp3": "Integrated backend services with React frontend to ensure seamless data flow.",
+      "resp4": "Implemented user authentication and access control for data privacy."
+    },
+    "network": {
+      "job": "Network Administrator",
+      "company": "Freelance",
+      "date": "2025",
+      "resp1": "Set up routers, firewalls, and VPNs to ensure data privacy and reliable connectivity.",
+      "resp2": "Monitored network performance and resolved hardware or connectivity issues.",
+      "resp3": "Managed server deployments and system updates to support web-based platforms.",
+      "resp4": "Diagnosed and repaired hardware components to ensure uptime and continuity."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Throughout my journey in web development, I’ve contributed to a range of projects — from responsive websites for small businesses to advanced full-stack applications and complex front-end interfaces. I’ve designed custom, high-performance, and scalable solutions while adhering to modern development standards."
+  },
+  "projectList": {
+    "project1": {
+      "name": "Dental Care Website",
+      "year": "January 2025"
+    },
+    "project2": {
+      "name": "Admin Dashboard – Dental Care",
+      "year": "January 2025"
+    },
+    "project3": {
+      "name": "E-commerce Website",
+      "year": "January 2025"
+    },
+    "project4": {
+      "name": "School Website",
+      "year": "May 2025"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "message1": "Let’s collaborate to bring your ideas to life.",
+    "message2": "Just a few clicks can turn inspiration into action."
+  },
+  "contactMain": {
+    "title": "Contact Me"
+  },
+  "contactForm": {
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Message",
+    "sendButton": "Send",
+    "success": "Message Sent Successfully"
+  },
+  "footer": {
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "rights": "All Rights Reserved."
+  }
+}

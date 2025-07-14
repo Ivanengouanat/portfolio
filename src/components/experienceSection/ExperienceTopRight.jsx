@@ -1,20 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 const ExperienceTopRight = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="xl:w-[25%] lg:w-[30%] border border-lightBrown p-4 rounded-xl">
       <p className="text-lg text-center text-lightGrey">
-        With a strong background in web development, I specialize in using{" "}
-        <span className="font-bold text-white">
-          Laravel and React to build elegant, high-performance interfaces.
-        </span>
-        I follow best practices to create{" "}
-        <span className="font-bold text-white">
-          {" "}
-          scalable and maintainable solutions.{" "}
-        </span>{" "}
+        {t("experience.intro")}
+        <span className="font-bold text-white"> {t("experience.stack")} </span>
+        {t("experience.practice")}
+        <span className="font-bold text-white"> {t("experience.stable")} </span>
         <br />
-        My experience spans a variety of projects, from showcase websites to{" "}
-        <span className="font-bold text-white">complex front-end systems</span>,
-        with a constant focus on clean code and exceptional user experience.
+        {t("experience.scope")}
+        <span className="font-bold text-white"> {t("experience.focus")} </span>
       </p>
     </div>
   );

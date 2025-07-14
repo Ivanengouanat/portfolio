@@ -1,67 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { FaChevronDown } from "react-icons/fa";
 
 const LanguageDropdown = () => {
-  const [open, setOpen] = useState(false);
+  const { i18n } = useTranslation();
 
-  const handleClick = (lang) => {
-    if (lang === "fr") {
-      document.documentElement.lang = "fr";
-      window.location.reload(); // Chrome proposera la traduction automatique
-    }
-    setOpen(false);
+  // Fonction de changement de langue
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "fr" : "en";
+    i18n.changeLanguage(newLang);
+    document.documentElement.lang = newLang; // SEO/accessibilité
   };
 
-  return (
-    <div style={{ position: "relative", display: "inline-block" }}>
-      {/* Bouton principal (🇬🇧 par défaut) */}
-      <button
-        onClick={() => setOpen(!open)}
-        style={{
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: 0,
-        }}
-      >
-        <img
-          src="/flags/en.png"
-          alt="English"
-          style={{ width: 32, height: 32 }}
-        />
-      </button>
+  // Détection du drapeau à afficher
+  const currentFlag =
+    i18n.language === "fr" ? "/flags/fr.png" : "/flags/en.png";
 
-      {/* Menu déroulant */}
-      {open && (
-        <div
-          style={{
-            position: "absolute",
-            top: 40,
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: 4,
-            boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-            padding: 8,
-            zIndex: 1000,
-          }}
-        >
-          <button
-            onClick={() => handleClick("fr")}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              padding: 0,
-            }}
-          >
-            <img
-              src="/flags/fr.png"
-              alt="Français"
-              style={{ width: 32, height: 32 }}
-            />
-          </button>
-        </div>
-      )}
-    </div>
+  return (
+    <button
+      onClick={toggleLanguage}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 8,
+        background: "none",
+        border: "none",
+        cursor: "pointer",
+        padding: "4px 8px",
+      }}
+    >
+      <img
+        src={currentFlag}
+        alt={i18n.language === "fr" ? "Français" : "English"}
+        style={{ width: 28, height: 28 }}
+      />
+      <FaChevronDown style={{ fontSize: 16, color: "#fff" }} />
+    </button>
   );
 };
 

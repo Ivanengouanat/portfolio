@@ -2,45 +2,46 @@ import SingleExperience from "./SingleExperience";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-
-const experiences = [
-  {
-    job: "Front-End Developer",
-    company: "Dental Practice Website",
-    date: " january 2025",
-    responsibilities: [
-      "Designed and developed dynamic user interfaces using React.js.",
-      "Built reusable and modular components to streamline development.",
-      "Developed a custom management system for dental practice operations using Laravel, MySQL, and React.",
-
-      "Tests, débogage et maintien de la stabilité du code en production.",
-    ],
-  },
-  {
-    job: "Backend Developer",
-    company: "Dental Practice Website",
-    date: "january 2025",
-    responsibilities: [
-      "Developed secure RESTful APIs with Laravel to support core dental operations.",
-      "Designed and optimized MySQL databases for patient records, appointments, and billing.",
-      "Integrated backend services with React frontend to ensure seamless data flow.",
-      " Implemented user authentication and access control for data privacy.",
-    ],
-  },
-  {
-    job: "Network Administrator",
-    company: "freelance",
-    date: "2025",
-    responsibilities: [
-      "Set up routers, firewalls, and VPNs to ensure data privacy and reliable connectivity.",
-      "Monitored network performance and resolved hardware or connectivity issues.",
-      "Managed server deployments and system updates to support web-based platforms.",
-      "Diagnosed and repaired hardware components to ensure uptime and continuity.",
-    ],
-  },
-];
-
+import { useTranslation } from "react-i18next";
 const AllExperiences = () => {
+  const { t } = useTranslation();
+
+  const experiences = [
+    {
+      job: t("experiences.frontend.job"),
+      company: t("experiences.frontend.company"),
+      date: t("experiences.frontend.date"),
+      responsibilities: [
+        t("experiences.frontend.resp1"),
+        t("experiences.frontend.resp2"),
+        t("experiences.frontend.resp3"),
+        t("experiences.frontend.resp4"),
+      ],
+    },
+    {
+      job: t("experiences.backend.job"),
+      company: t("experiences.backend.company"),
+      date: t("experiences.backend.date"),
+      responsibilities: [
+        t("experiences.backend.resp1"),
+        t("experiences.backend.resp2"),
+        t("experiences.backend.resp3"),
+        t("experiences.backend.resp4"),
+      ],
+    },
+    {
+      job: t("experiences.network.job"),
+      company: t("experiences.network.company"),
+      date: t("experiences.network.date"),
+      responsibilities: [
+        t("experiences.network.resp1"),
+        t("experiences.network.resp2"),
+        t("experiences.network.resp3"),
+        t("experiences.network.resp4"),
+      ],
+    },
+  ];
+
   return (
     <div className="flex md:flex-row sm:flex-col items-center justify-between">
       {experiences.map((experience, index) => {

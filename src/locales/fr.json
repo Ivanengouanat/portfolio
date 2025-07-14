@@ -1,0 +1,118 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "Hire Me": "embauchez-moi"
+  },
+  "hero": {
+    "subtitle_1": "Développeur Full Stack &",
+    "subtitle_2": "Administrateur Réseaux",
+    "description_1": "Développeur Web Passionné",
+    "description_2": "avec 2 ans d'expérience."
+  },
+  "subhero": {
+    "title1": "Apprentissage Rapide",
+    "title2": "Esprit d'Équipe",
+    "title3": "Maîtrise des Détails"
+  },
+  "about_me": {
+    "title": "À propos de moi",
+    "description": "Je suis développeur full-stack et administrateur réseau, spécialisé dans la création d’applications dynamiques avec Laravel, React.js et MySQL, tout en assurant une infrastructure système et réseau fiable. Polyvalent et attentif aux détails, je combine développement web, diagnostic matériel et bonnes pratiques en cybersécurité pour fournir des solutions sécurisées et évolutives. Ouvert à la collaboration internationale, je poursuis actuellement des certifications en SQL et en cybersécurité pour renforcer mon profil technique.",
+    "footer": "Mes Projets"
+  },
+  "skill": {
+    "title": "Mes Compétences",
+    "description": "Chaque compétence que j'ai développée va au-delà de la théorie : elle a été testée et validée dans des situations réelles. J'utilise quotidiennement ces outils et langages, en appliquant des standards professionnels pour offrir des résultats solides et optimisés. Les projets présentés dans mon portfolio sont le reflet direct de cette expertise, réalisés avec passion, précision et souci du détail."
+  },
+  "experience": {
+    "intro": "Grâce à une solide expérience en développement web, je suis spécialisé dans l’utilisation de",
+    "stack": "Laravel et React pour créer des interfaces élégantes et performantes.",
+    "practice": " Je respecte les bonnes pratiques afin de développer",
+    "stable": "des solutions évolutives et maintenables.",
+    "scope": "Mon parcours couvre divers projets : des sites vitrines jusqu’à",
+    "focus": "des systèmes front-end complexes, avec une attention constante portée à la qualité du code et à l’expérience utilisateur."
+  },
+  "experienceTopLeft": {
+    "since": "Depuis 2024",
+    "years": "Années",
+    "websites": "Sites web",
+    "budget": "Budget maximum",
+    "description": "Développeur web avec 2 ans d’expérience, j’utilise Laravel et React pour créer des interfaces fiables et performantes."
+  },
+  "experiences": {
+    "frontend": {
+      "job": "Développeur Front-End",
+      "company": "Site Web pour Cabinet Dentaire",
+      "date": "Janvier 2025",
+      "resp1": "Conception et développement d'interfaces utilisateur dynamiques avec React.js.",
+      "resp2": "Création de composants modulaires et réutilisables pour accélérer le développement.",
+      "resp3": "Développement d’un système de gestion sur mesure pour les opérations du cabinet dentaire avec Laravel, MySQL et React.",
+      "resp4": "Tests, débogage et maintien de la stabilité du code en production."
+    },
+    "backend": {
+      "job": "Développeur Backend",
+      "company": "Site Web pour Cabinet Dentaire",
+      "date": "Janvier 2025",
+      "resp1": "Développement d’API REST sécurisées avec Laravel pour les opérations dentaires.",
+      "resp2": "Conception et optimisation de bases de données MySQL pour les dossiers patients, rendez-vous et facturation.",
+      "resp3": "Intégration des services backend avec le frontend React pour garantir une fluidité des données.",
+      "resp4": "Mise en place de l’authentification utilisateur et du contrôle d’accès pour sécuriser les données."
+    },
+    "network": {
+      "job": "Administrateur Réseaux",
+      "company": "Freelance",
+      "date": "2025",
+      "resp1": "Configuration de routeurs, pare-feu et VPN pour garantir la confidentialité et la fiabilité des connexions.",
+      "resp2": "Surveillance des performances du réseau et résolution des problèmes matériels ou de connectivité.",
+      "resp3": "Gestion des déploiements serveur et des mises à jour systèmes pour soutenir les plateformes web.",
+      "resp4": "Diagnostic et réparation des composants matériels pour assurer la disponibilité continue."
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "description": "Tout au long de mon parcours en développement web, j’ai contribué à une variété de projets — des sites web responsives pour petites entreprises aux applications full-stack avancées et interfaces front-end complexes. J’ai conçu des solutions sur mesure, performantes et évolutives tout en respectant les standards modernes du développement."
+  },
+  "projectList": {
+    "project1": {
+      "name": "Site Web pour Soins Dentaires",
+      "year": "Janvier 2025"
+    },
+    "project2": {
+      "name": "Tableau de Bord Admin – Soins Dentaires",
+      "year": "Janvier 2025"
+    },
+    "project3": {
+      "name": "Site E-commerce",
+      "year": "Janvier 2025"
+    },
+    "project4": {
+      "name": "Site Web Scolaire",
+      "year": "Mai 2025"
+    }
+  },
+  "contact": {
+    "title": "Entrons en Contact",
+    "message1": "Collaborons pour donner vie à vos idées.",
+    "message2": "Quelques clics suffisent pour transformer l'inspiration en action."
+  },
+  "contactMain": {
+    "title": "Me Contacter"
+  },
+  "contactForm": {
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "Votre email",
+    "messagePlaceholder": "Message",
+    "sendButton": "Envoyer",
+    "success": "Message envoyé avec succès"
+  },
+  "footer": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "rights": "Tous droits réservés."
+  }
+}

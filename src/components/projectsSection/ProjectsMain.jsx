@@ -1,40 +1,43 @@
+import { useTranslation } from "react-i18next";
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-const projects = [
-  {
-    name: " Dentale care website",
-    year: "January 2025",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "https://t886jm-3001.csb.app/",
-  },
-  {
-    name: "Admin Dashbord Dentale care website",
-    year: "January 2025",
-    align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "https://7228fj-3000.csb.app",
-  },
-  {
-    name: "E-commerce ebsite",
-    year: "January 2025",
-    align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "https://nrzpw7-3000.csb.app",
-  },
-  {
-    name: "School website",
-    year: "May 2025",
-    align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
-  },
-];
-
 const ProjectsMain = () => {
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      name: t("projectList.project1.name"),
+      year: t("projectList.project1.year"),
+      align: "right",
+      image: "../../public/images/website-img-1.jpg",
+      link: "https://t886jm-3001.csb.app/",
+    },
+    {
+      name: t("projectList.project2.name"),
+      year: t("projectList.project2.year"),
+      align: "left",
+      image: "../../public/images/website-img-2.webp",
+      link: "https://7228fj-3000.csb.app",
+    },
+    {
+      name: t("projectList.project3.name"),
+      year: t("projectList.project3.year"),
+      align: "right",
+      image: "../../public/images/website-img-3.jpg",
+      link: "https://nrzpw7-3000.csb.app",
+    },
+    {
+      name: t("projectList.project4.name"),
+      year: t("projectList.project4.year"),
+      align: "left",
+      image: "../../public/images/website-img-4.jpg",
+      link: "#",
+    },
+  ];
+
   return (
     <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <motion.div
@@ -45,19 +48,18 @@ const ProjectsMain = () => {
       >
         <ProjectsText />
       </motion.div>
+
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-              link={project.link}
-            />
-          );
-        })}
+        {projects.map((project, index) => (
+          <SingleProject
+            key={index}
+            name={project.name}
+            year={project.year}
+            align={project.align}
+            image={project.image}
+            link={project.link}
+          />
+        ))}
       </div>
     </div>
   );
