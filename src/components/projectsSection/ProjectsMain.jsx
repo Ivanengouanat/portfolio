@@ -13,14 +13,14 @@ const ProjectsMain = () => {
       year: t("projectList.project1.year"),
       align: "right",
       image: "/images/website-img-1.jpg",
-      link: "https://t886jm-3001.csb.app/",
+      link: "https://86d3sf-3000.csb.app/",
     },
     {
       name: t("projectList.project2.name"),
       year: t("projectList.project2.year"),
       align: "left",
       image: "/images/website-img-2.webp",
-      link: "https://7228fj-3000.csb.app",
+      link: "https://jh6v8z-3000.csb.app/",
     },
     {
       name: t("projectList.project3.name"),
