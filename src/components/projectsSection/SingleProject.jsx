@@ -1,8 +1,11 @@
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { useTranslation } from "react-i18next";
 
 const SingleProject = ({ name, year, align, image, link }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       variants={fadeIn("top", 0)}
@@ -28,7 +31,8 @@ const SingleProject = ({ name, year, align, image, link }) => {
             align === "left" ? "md:justify-self-end" : "md:justify-self-start"
           }`}
         >
-          View <BsFillArrowUpRightCircleFill />
+          {t("single_projet.View")}
+          <BsFillArrowUpRightCircleFill />
         </a>
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">

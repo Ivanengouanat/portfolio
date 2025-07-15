@@ -114,5 +114,8 @@
     "experience": "Experience",
     "projects": "Projects",
     "rights": "All Rights Reserved."
+  },
+  "single_projet": {
+    "View": "View"
   }
 }
