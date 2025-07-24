@@ -27,7 +27,7 @@ const ProjectsMain = () => {
       year: t("projectList.project3.year"),
       align: "right",
       image: "/images/website-img-3.jpg",
-      link: "https://nrzpw7-3000.csb.app",
+      link: "https://fm3zl7-3000.csb.app/",
     },
     {
       name: t("projectList.project4.name"),
