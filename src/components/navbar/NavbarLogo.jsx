@@ -1,7 +1,6 @@
-import { useTranslation } from "react-i18next";
 
 const NavbarLogo = () => {
-  const { t } = useTranslation();
+  
   return (
     <div>
       <h1 className="text-white  text-2xl sm:hidden md:block">Ngouanat Ivan</h1>
